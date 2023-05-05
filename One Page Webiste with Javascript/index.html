@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Space Station | Resort</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+
+<body>
+    <!--NAV-->
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
+                <a href="#home">
+                    <li>HOME</li>
+                </a>
+                <a href="#gallery">
+                    <li>GALLERY</li>
+                </a>
+                <a href="#contact">
+                    <li>RESERVATIONS</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <!--NAV-->
+
+    <!--HOME-->
+    <div id="home">
+        <div class="container">
+            <div class="text-center">
+                <span class="head-main">The Space Station</span>
+            </div>
+        </div>
+    </div>
+    <!--HOME-->
+
+    <!--GAL-->
+    <section id="gallery">
+        <div class="container">
+            <h1>Gallery</h1>
+            <div class="flex-container">
+                <!-- photo container 1-->
+                <div class="photo-container" onclick="openModal();currentSlide(1)">
+                    <div class="photo">
+                        <img src="/images/thumb/manu.png" class="hover-shadow">
+                        <div class="photo-overlay">
+                            <h3>Click to Enlarge</h3>
+                            <p>We have several space launches departing daily, book your flight now</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--END PHOTO CONTAINER 1-->
+
+                <!-- photo container 2-->
+                <div class="photo-container" onclick="openModal();currentSlide(2)">
+                    <div class="photo">
+                        <img src="./images/thumb/leicester.jpeg" onclick="openModal();currentSlide(2)">
+                        <div class="photo-overlay">
+                            <h3>Click to Enlarge</h3>
+                            <p>We have several space launches departing daily, book your flight now</p>
+                        </div>
+                    </div>
+                </div>
+                <!--END PHOTO CONTAINER 2-->
+
+
+                <!-- photo container 3-->
+                <div class="photo-container" onclick="openModal();currentSlide(3)">
+                    <div class="photo">
+                        <img src="./images/thumb/index.png" onclick="openModal();currentSlide(3)">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>We have several space launches departing daily, book your flight now</p>
+                        </div>
+                    </div>
+                </div>
+                <!--END PHOTO CONTAINER 3-->
+
+
+                <!-- photo container 4-->
+                <div class="photo-container" onclick="openModal();currentSlide(4)">
+                    <div class="photo">
+                        <img src="./images/thumb/dortmund.png" onclick="openModal();currentSlide(4)">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>We have several space launches departing daily, book your flight now</p>
+                        </div>
+                    </div>
+                </div>
+                <!--END PHOTO CONTAINER 4-->
+
+
+                <!-- photo container 5-->
+                <div class="photo-container" onclick="openModal();currentSlide(5)">
+                    <div class="photo">
+                        <img src="./images/thumb/chelsea.png" onclick="openModal();currentSlide(5)">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>We have several space launches departing daily, book your flight now</p>
+                        </div>
+                    </div>
+                </div>
+                <!--END PHOTO CONTAINER 5-->
+
+
+                <!-- photo container 6-->
+                <div class="photo-container" onclick="openModal();currentSlide(6)">
+                    <div class="photo">
+                        <img src="./images/thumb/th.png" onclick="openModal();currentSlide(6)">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>We have several space launches departing daily, book your flight now</p>
+                        </div>
+                    </div>
+                </div>
+                <!--END PHOTO CONTAINER 6-->
+
+
+                <!-- photo container 7-->
+                <div class="photo-container" onclick="openModal();currentSlide(7)">
+                    <div class="photo">
+                        <img src="./images/thumb/tottenham.png" onclick="openModal();currentSlide(7)">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>We have several space launches departing daily, book your flight now</p>
+                        </div>
+                    </div>
+                </div>
+                <!--END PHOTO CONTAINER 7-->
+
+
+                <!-- photo container 8-->
+                <div class="photo-container" onclick="openModal();currentSlide(8)">
+                    <div class="photo">
+                        <img src="./images/thumb/arsnal.png" onclick="openModal();currentSlide(8)">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>We have several space launches departing daily, book your flight now</p>
+                        </div>
+                    </div>
+                </div>
+                <!--END PHOTO CONTAINER 8-->
+
+
+                <!-- photo container 9-->
+                <div class="photo-container" onclick="openModal();currentSlide(9)">
+                    <div class="photo">
+                        <img src="./images/thumb/barca.png" onclick="openModal();currentSlide(9)">
+                        <div class="photo-overlay">
+                            <h3 class="white-head">Click to Enlarge</h3>
+                            <p>We have several space launches departing daily, book your flight now</p>
+                        </div>
+                    </div>
+                </div>
+                <!--END PHOTO CONTAINER 9-->
+
+            </div>
+        </div>
+
+        <!--Modal div-->
+        <div id="myModal" class="modal">
+            <!--close icon-->
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+
+            <!--the items to dispay in the modal-->
+            <div class="modal-content">
+
+                <!--1st slide-->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 9</div>
+                    <img src="/images/thumb/manu.png" style="width:100%">
+                </div>
+                <!--1st slide end-->
+
+                <!--2nd slide-->
+                <div class="mySlides">
+                    <div class="numbertext">2 / 9</div>
+                    <img src="/images/thumb/leicester.jpeg" style="width:100%">
+                </div>
+                <!--2nd slide end-->
+
+                <!--3rd slide-->
+                <div class="mySlides">
+                    <div class="numbertext">3 / 9</div>
+                    <img src="/images/thumb/index.png" style="width:100%">
+                </div>
+                <!--3rd slide end-->
+
+                <!--4th slide-->
+                <div class="mySlides">
+                    <div class="numbertext">4 / 9</div>
+                    <img src="/images/thumb/dortmund.png" style="width:100%">
+                </div>
+                <!--4th slide end-->
+
+                <!--5th slide-->
+                <div class="mySlides">
+                    <div class="numbertext">5 / 9</div>
+                    <img src="/images/thumb/chelsea.png" style="width:100%">
+                </div>
+                <!--5th slide end-->
+
+                <!--6th slide-->
+                <div class="mySlides">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="/images/thumb/th.png" style="width:100%">
+                </div>
+                <!--6th slide end-->
+
+                <!--7th slide-->
+                <div class="mySlides">
+                    <div class="numbertext">7 / 9</div>
+                    <img src="/images/thumb/tottenham.png" style="width:100%">
+                </div>
+                <!--7th slide end-->
+
+                <!--8th slide-->
+                <div class="mySlides">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="/images/thumb/arsnal.png" style="width:100%">
+                </div>
+                <!--8th slide end-->
+            </div>
+
+            <!--9th slide-->
+            <div class="mySlides">
+                <div class="numbertext">9 / 9</div>
+                <img src="/images/thumb/barca.png" style="width:100%">
+            </div>
+            <!--9th slide end-->
+
+            <!--Next/previous controls-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="prev" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--Caption Text-->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+        </div>
+        </div>
+
+        <!--end of Modal div-->
+
+
+    </section>
+    <!--GAL-->
+
+    <!--RSVP-->
+    <section id="contact">
+        <div class="container">
+            <div class="heading-padding">
+                <h1 class="heading-padding">Reservation</h1>
+                <div class="reservation">
+                    <h2><span>Your adventure is just around the moon</span>
+                        </br>Reserve your flight today!
+                    </h2>
+                    <p class="rsvp-text">
+                        please provide us with your basic contact information
+                    </p>
+                    <div class="form-rsvp">
+                        <form action="" method="post">
+                            <input type="text" class="rsvp" value="" placeholder="First Name">
+                            <input type="text" class="rsvp" value="" placeholder="Last Name">
+                            <input type="text" class="rsvp" value="" placeholder="Email Address">
+                            <input type="text" class="rsvp" value="" placeholder="Phone Number">
+                            <div class="form-spacer">
+                                <label class="terms">Terms and Conditions</label>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="submit">
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--RSVP-->
+
+    <!--FOOTER-->
+    <div id="footer">
+        www.thespacestation.space &nbsp;|&nbsp; &copy; 2017
+    </div>
+    <!--FOOTER-->
+    <script src="spaceship.js"></script>
+</body>
+
+</html>
